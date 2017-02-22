@@ -5,7 +5,6 @@ import logging.handlers
 import time
 import os
 import re
-from util import config_util
 
 class Logger(logging.Logger):
 
@@ -13,11 +12,7 @@ class Logger(logging.Logger):
         super(Logger, self).__init__(self)
         # 日志文件名
         if filename is None:
-            config_log_path = config_util.get_conf('LOG_PATH')
-            if config_log_path:
-                filename = config_log_path
-            else:
-                filename = 'my.log'
+            filename = 'my.log'
         if not os.path.exists(filename):
             os.makedirs(filename)
         self.filename = filename+'/'+str(int(time.time()))
@@ -68,6 +63,3 @@ def error(msg):
     if not logger:
         logger = Logger()
     logger.error(msg)
-
-if __name__ == '__main__':
-    debug("test")
