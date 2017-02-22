@@ -1,4 +1,4 @@
-#coding=utf-8
+#coding：utf-8
 __author__ = "linbingfeng"
 
 #利用Unicode编码，判断一个字符串类型，返回一个布尔值
