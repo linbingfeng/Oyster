@@ -3,7 +3,7 @@
 *.log
 .project
 .pydevproject
-/oyster/.setting/
+/oyster/.settings/
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
