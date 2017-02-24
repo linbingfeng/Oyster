@@ -25,9 +25,3 @@ def rows2json(rows, keys):
         results.append(result)
     return results
 
-
-if __name__ == '__main__':
-    result = read(u'conf/第三方供应商后台账号信息-发技术.xls', 7)
-    keys = ['agent_id', 'agent_name', 'login_url', 'user_name', 'password', 'code', 'operator']
-    print rows2json(result, keys)
-    # print result
