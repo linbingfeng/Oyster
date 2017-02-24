@@ -1,3 +1,9 @@
+*.pyc
+*.xml
+*.log
+*.project
+*.pydevproject
+/.setting/
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
