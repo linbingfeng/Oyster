@@ -1,9 +1,4 @@
-*.pyc
-*.xml
-*.log
-.project
-.pydevproject
-/oyster/.settings/
+.settings/
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
